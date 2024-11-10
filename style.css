@@ -1,0 +1,30 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+h2 {
+    margin: 0;
+}
+
+#tooltip {
+    position: absolute;
+    background-color: rgba(189, 189, 189, 0.562); /* Colore di sfondo più chiaro */
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    pointer-events: none;
+    display: none; /* Inizialmente nascosto */
+    z-index: 10; /* Per garantire che il tooltip sia sopra gli altri contenuti */
+    font-size: 14px; /* Puoi adattare la dimensione del testo come preferisci */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Aggiunge un'ombra per il tooltip */
+    min-width: 100px; /* Larghezza minima */
+    max-width: 200px; /* Larghezza massima per non essere troppo largo */
+    word-wrap: break-word; /* Aggiunge una rottura di parola per il testo lungo */
+}
+
+#map {
+    margin: 0 auto; /* Centers the map horizontally */
+    display: block; /* Ensures the map is treated as a block element */
+    width: fit-content; /* Adjust the width to the content of the map */
+}
